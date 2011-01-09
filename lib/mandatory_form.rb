@@ -1,2 +1,1 @@
-module MandatoryForm
-end
+require "mandatory_form/mandatory_form_builder"
