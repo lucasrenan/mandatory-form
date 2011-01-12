@@ -1,6 +1,6 @@
 class MandatoryFormBuilder < ActionView::Helpers::FormBuilder
 
-  def label(method, text = nil, options = {}, &block)
+  def label_with_mandatory(method, text = nil, options = {}, &block)
     
     unless @object.class.validators_on(method).empty?
       if options[:class].nil?
